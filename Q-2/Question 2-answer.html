@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Batch 2 Day 5-6 Assignment 3 - Question 2</title>
+	<style>
+	*{
+		padding: 0px;
+		margin: 10px;
+	}
+	h1{
+		text-align: center;
+	}	
+	.form{
+		height: 350px;
+		width: 80%;
+		background-color: orange;
+		margin-left: 8%;
+		padding: 20px;
+	}
+	.form2{
+		height: 50px;
+		width: 80%;
+		background-color: orange;
+		margin-left: 8%;
+		padding: 0px;
+	}
+	.form2 input{
+		width: 160px;
+		margin: 18px 0px 0px 0px;
+	}
+	
+	table{
+		/*margin: auto;*/
+		margin: 0px;
+		text-align: center;
+	}
+	th,td{
+		width: 200px;
+		padding: 10px;
+	}
+	.search{
+		margin-left: 33%;
+	}
+
+
+	</style>
+</head>
+<body>
+	<div class="data">
+		<h1>Bus Information</h1>
+		<div class="search">
+			<form>
+				<input type="text" name="searchbyname" id="searchbysource" placeholder="Search By Source" onkeyup="searchBySource()" />
+				<input type="text" name="searchbycity" id="searchbydestination" placeholder="Search By Destination" onkeyup="searchByDestination()" />
+			</form>
+		</div>
+
+
+
+		<div class="form2">
+            <!-- <form onsubmit="return false"> -->
+                <form onsubmit="addnewbus(event)">
+            <div>
+            <input type="text" name="name" required id="name" placeholder="name" />
+            <input type="text" name="source" required id="source" placeholder="source" />
+            <input type="text" name="destination" required id="destination" placeholder="destination" />
+            <input type="text" name="number" required id="number" placeholder="number" />
+            <input type="text" name="passengerCapacity" required id="passengerCapacity" placeholder="passenger capacity" />
+            <button type="submit">Add Bus</button>
+            </div>
+            </form>
+            
+        </div>
+
+		<div class="form">
+			<table border="1px" cellspacing="0">
+				<thead>
+					<tr>
+						<th>Sr.No.</th>
+						<th>Name</th>
+						<th>Source</th>
+						<th>Destination</th>
+						<th>Number</th>
+						<th>Passenger Capacity</th>
+					</tr>
+				</thead>
+
+				<tbody class="tdata">
+										
+				</tbody>
+			</table>
+			
+		</div>
+	</div>
+	
+
+<script type="text/javascript" src="Question 1-answer - Javascript.js">
+	//Program to Create a array containing five objects with properties { name, age , city , salary }
+</script>	
+</body>
+</html>
